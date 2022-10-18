@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style_css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Formularios en HTML</h1>
+</header>
+<nav><ul id="navegacion">
+		<li><a href="../Main.html">Main </a></li>
+		<li><a href="Formatos_de_texto.html">Formatos </a></li>
+	<li><a href="Listas.html">Listas</a></li>
+	<li><a href="Tablas.html">Tablas</a></li>
+	<li><a href="Enlaces.html">Enlaces</a></li>
+	<li><a href="Imágenes.html">Imágenes</a></li>
+	<li><a href="Audios.html">Audio</a></li>
+	<li><a href="Video.html">Video</a></li>
+	<li><a href="Formularios.html">Formulario</a></li>
+</ul></nav>
+<main>
+<section>
+    <h2>Formulario 1</h2>
+    <p>Este es el contenido de la etiqueta P de diseño</p>
+    <form id="form1" name="form1" method="post">
+      <label for="nombre" class="label">Nombre</label>
+      <input type="text" name="nombre" id="nombre">
+       
+		<label for="Apellido" class="label">Apellido</label>
+    <input type="text" name="Apellido" id="Apellido">
+		
+    <input type="submit" name="submit" id="submit" value="Enviar">
+    </form>
+  
+  </section>
+  <section>
+    <h2>Formulario con radiobutton</h2>
+    <p>Este es el contenido de la etiqueta P de diseño</p>
+    <form method="post" name="form2" id="form2">
+<table width="200" class="celda_centrada transparente">
+        <tr class="transparente">
+          <td class="celda2 transparente"><label class="label transparente">
+            <input type="radio" name="RadioGroup1" value="Masculino" id="RadioGroup1_0">
+          Masculino</label></td>
+        </tr>
+        <tr class="transparente">
+          <td class="celda2 transparente"><label class="label transparente">
+            <input type="radio" name="RadioGroup1" value="Femenino" id="RadioGroup1_1">
+            Femenino</label></td>
+        </tr>
+      </table>
+<label for="pais" class="label">País:</label>
+<select name="pais" id="pais" >
+  <option>México</option>
+  <option>Argentina</option>
+  <option>España</option>
+  <option>Peru</option>
+  <option>Colombia</option>
+</select>
+<p id="formtxt">
+	¿Dónde recidirás durante tu estancia en el país?
+  <br><label class="label2">
+    <input type="checkbox" name="residencia_temporal" value="domicilio_particular" id="residencia_temporal_0">
+	  Casa de un amigo</label>
+  <br>
+  <label class="label2">
+    <input type="checkbox" name="residencia_temporal" value="hotel" id="residencia_temporal_1">
+    Hotel</label>
+  <br>
+  <label class="label2">
+    <input type="checkbox" name="residencia_temporal" value="airbnb" id="residencia_temporal_2">
+    Airbnb</label>
+  <br>
+</p>
+<input type="submit" name="submit2" id="submit_2" value="Enviar">
+      
+    </form>
+	  
+  </section>
+<section>
+    <h2>Formulario 2.0</h2>
+    <p>Este es el contenido de la etiqueta P de diseño</p>
+    <form id="form3" name="Mitryouts" method="post">
+		
+  <label for="birthdaytime" class="transparente label3">Birthday (date and time):</label>
+  <input name="birthdaytime" type="datetime-local" id="birthdaytime" title="cumpleaños" autocomplete="off">
+		
+	 <label for="phone" class="transparente label3">Escribe tu número de celular:</label>
+  	<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+	
+		 <label for="favcolor" class="label3 transparente">Selecciona el color de preferencia:</label>
+  <input type="color" id="favcolor" name="favcolor">
+		
+		<label for="pwd" class="label3 transparente"><br>
+	    Su contraseña para confirmar envio:</label>
+		<br>
+  <input type="password" id="pwd" name="pwd">
+  <br>
+<input type="submit" name="submit2" class="submit_2" value="Enviar">  
+	  <input type="reset" class="submit_2">
+</form>
+  </section>
+  <section>
+    <h2>Contacto</h2>
+    <p>Este es el contenido de la etiqueta P de diseño</p>
+    <form action="Untitled-2.html" method="post" name="form4" class="transparente" id="form4"> 
+      <label for="email" class="transparente label4">Email:</label><br>
+      <input name="email" type="email" class="transparente" id="email">
+    <br><br>  <label for="comentario" class="transparente label4">Comentarios:</label> <br>
+      <textarea name="comentario" maxlength="200" class="transparente" id="comentario">Escribe aquí tu mennsaje...</textarea>
+      <input name="submit2" type="submit" class="submit_2" formaction="Untitled-2.html" value="Enviar">
+      
+    </form>
+  </section>
+&nbsp;</main>
+<footer>
+  <h6>Elaborado por Enrique Martínez Luna</h6>
+</footer>
+</body>
+</html>
